@@ -21,7 +21,7 @@
 
 
 
-Vue.component('merdeneaComponent',{
+Vue.component('mamaligaBeton',{
     props: ['merdeneus'],
     template: '<li>Added merdenea {{merdeneus.nume}}</li>'
 })

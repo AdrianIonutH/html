@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CosCumparaturi</title>
+</head>
+<body>
+<div id="app">
+
+    <input v-model="produs.numeProdus" placeholder="nume produs">
+    <input v-model="produs.cantitate" placeholder="cantitate produs">
+    <br>
+    <button v-on:click="adaugaProdus()">Adauga Produs</button>
+    <br>
+    {{cumparaturi}}
+
+    <table border="10">
+        <tbody>
+            <tr>
+                <th>Produs</th>
+                <th>Cantitate</th>
+            </tr>
+        <tr is='cumparaturi-component' v-for="produs in cumparaturi"
+                                   v-bind:alimente="produs">
+        </tr>
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src = "CosCumparaturi.js"></script>
+</html>
