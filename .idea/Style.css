@@ -1,0 +1,73 @@
+.modificare1{
+    font-size: 15px;
+    background-color: cornflowerblue;
+}
+
+.modificare2{
+    border: darkgoldenrod;
+}
+
+.modificare3{
+    border: azure;
+    font: bold;
+    margin: fill;
+}
+
+.animation{
+    animation: pulse 5s infinite;
+}
+@keyframes pulse {
+    0% {
+        background-color: #FF8C00;
+    }
+    50% {
+        background-color: #FF4136;
+    }
+    100% {
+        background-color: #FF8C00;
+    }
+}
+.element {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    animation:
+            pulse 3s ease infinite alternate,
+            nudge 5s linear infinite alternate;
+    border-radius: 100%;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: red;
+    }
+    50% {
+        background-color: orange;
+    }
+}
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(150px, 0);
+    }
+
+    80% {
+        transform: translate(-150px, 0);
+    }
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
